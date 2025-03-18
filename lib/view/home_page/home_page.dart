@@ -68,6 +68,8 @@ class _HomePageState extends State<HomePage> {
                                   text: event?.description ?? '',
                                   fontWeight: FontWeight.w400,
                                   fontSize: 12,
+                                  maxLines: 3,
+                                  overflow: TextOverflow.ellipsis,
                                 ),
                               ],
                             ),

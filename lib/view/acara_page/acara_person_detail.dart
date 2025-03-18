@@ -65,20 +65,53 @@ class _AcaraPersonDetailBodyState extends State<_AcaraPersonDetailBody> {
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    TextCustome(
-                      text: event?.name ?? '',
-                      fontWeight: FontWeight.w600,
-                      fontSize: 14,
-                    ),
-                    TextCustome(
-                      text: event?.divisi.target?.name ?? '',
-                      fontWeight: FontWeight.w400,
-                      fontSize: 12,
-                    ),
-                    TextCustome(
-                      text: event?.nomorHp ?? '',
-                      fontWeight: FontWeight.w400,
-                      fontSize: 12,
+                    // _rowCustome(title: "Nama", value: event?.name),
+                    // _rowCustome(title: "Dari", value: event?.divisi.target?.name),
+                    // _rowCustome(title: "Nomor", value: event?.nomorHp),
+                    Row(
+                      spacing: 10,
+                      children: [
+                        Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            TextCustome(
+                              text: "Nama",
+                              fontWeight: FontWeight.w600,
+                              fontSize: 14,
+                            ),
+                            TextCustome(
+                              text: "Dari",
+                              fontWeight: FontWeight.w600,
+                              fontSize: 14,
+                            ),
+                            TextCustome(
+                              text: "Nomor Hp",
+                              fontWeight: FontWeight.w600,
+                              fontSize: 14,
+                            ),
+                          ],
+                        ),
+                        Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            TextCustome(
+                              text: ":\t\t${event?.name}",
+                              fontWeight: FontWeight.w600,
+                              fontSize: 14,
+                            ),
+                            TextCustome(
+                              text: ":\t\t${event?.divisi.target?.name}",
+                              fontWeight: FontWeight.w600,
+                              fontSize: 14,
+                            ),
+                            TextCustome(
+                              text: ":\t\t${event?.nomorHp}",
+                              fontWeight: FontWeight.w600,
+                              fontSize: 14,
+                            ),
+                          ],
+                        ),
+                      ],
                     ),
                     Center(
                       child: Image.file(
