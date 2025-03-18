@@ -1,0 +1,145 @@
+{
+  "_note1": "KEEP THIS FILE! Check it into a version control system (VCS) like git.",
+  "_note2": "ObjectBox manages crucial IDs for your object model. See docs for details.",
+  "_note3": "If you have VCS merge conflicts, you must resolve them according to ObjectBox docs.",
+  "entities": [
+    {
+      "id": "1:2856210051047624666",
+      "lastPropertyId": "7:7699047194876484819",
+      "name": "PersonDatabase",
+      "properties": [
+        {
+          "id": "1:1044072566584168062",
+          "name": "id",
+          "type": 6,
+          "flags": 1
+        },
+        {
+          "id": "2:8477870283597203145",
+          "name": "name",
+          "type": 9
+        },
+        {
+          "id": "3:364417844557502026",
+          "name": "divisiId",
+          "type": 11,
+          "flags": 520,
+          "indexId": "2:5597251594856104144",
+          "relationTarget": "DivisiDatabase"
+        },
+        {
+          "id": "4:7259818050157503377",
+          "name": "sigantureImage",
+          "type": 9
+        },
+        {
+          "id": "5:8072883543424201001",
+          "name": "nomorHp",
+          "type": 9
+        },
+        {
+          "id": "7:7699047194876484819",
+          "name": "eventId",
+          "type": 11,
+          "flags": 520,
+          "indexId": "6:4815145322428315918",
+          "relationTarget": "EventDatabase"
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "3:1703819473477636000",
+      "lastPropertyId": "5:610159662210117749",
+      "name": "DivisiDatabase",
+      "properties": [
+        {
+          "id": "1:6397143090813261646",
+          "name": "id",
+          "type": 6,
+          "flags": 1
+        },
+        {
+          "id": "2:2140423295590653135",
+          "name": "name",
+          "type": 9
+        },
+        {
+          "id": "3:8092190447238036930",
+          "name": "acaraId",
+          "type": 11,
+          "flags": 520,
+          "indexId": "1:6254284601558363811",
+          "relationTarget": "EventDatabase"
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "4:3096772067571814733",
+      "lastPropertyId": "5:3228319259335071057",
+      "name": "EventDatabase",
+      "properties": [
+        {
+          "id": "1:7535073605002549701",
+          "name": "id",
+          "type": 6,
+          "flags": 1
+        },
+        {
+          "id": "2:376914958802295919",
+          "name": "name",
+          "type": 9
+        },
+        {
+          "id": "3:3833678253230029450",
+          "name": "description",
+          "type": 9
+        },
+        {
+          "id": "4:5388054486649660559",
+          "name": "date",
+          "type": 10
+        },
+        {
+          "id": "5:3228319259335071057",
+          "name": "nameDivisi",
+          "type": 9
+        }
+      ],
+      "relations": []
+    }
+  ],
+  "lastEntityId": "4:3096772067571814733",
+  "lastIndexId": "6:4815145322428315918",
+  "lastRelationId": "7:2886979274118191140",
+  "lastSequenceId": "0:0",
+  "modelVersion": 5,
+  "modelVersionParserMinimum": 5,
+  "retiredEntityUids": [
+    2026740901415108783
+  ],
+  "retiredIndexUids": [
+    800326072899252199,
+    4522288439748752363,
+    1518011378208948286
+  ],
+  "retiredPropertyUids": [
+    8445197292447913542,
+    5079848249309212500,
+    4619519111304567248,
+    8510144088319020200,
+    6968460822717380324,
+    610159662210117749,
+    7575315859337820529
+  ],
+  "retiredRelationUids": [
+    7872359878340848195,
+    4797825462642805375,
+    4290667845591195493,
+    255587330564477092,
+    2886979274118191140,
+    4972966296000211426
+  ],
+  "version": 1
+}
