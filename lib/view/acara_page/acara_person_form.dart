@@ -86,7 +86,7 @@ class _AcaraPersonBodyState extends State<_AcaraPersonBody> {
                   keyboardType: TextInputType.number,
                 ),
                 SelectComponent(
-                  hintText: "Pilih ${provider.eventData?.nameDivisi}",
+                  hintText: "Pilih ${provider.eventData?.nameDivisi ?? ' '}",
                   value: provider.selectDivisi,
                   listItem: widget.data?.divisi.map((value) {
                     return DropdownMenuItem<DivisiDatabase>(

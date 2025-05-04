@@ -135,15 +135,15 @@ class _AcaraPersonDetailBodyState extends State<_AcaraPersonDetailBody> {
       bottomNavigationBar: Column(
         mainAxisSize: MainAxisSize.min,
         children: [
-          Consumer<PersonExcelProvider>(
-            builder: (context, provider, _) {
+          Consumer2<PersonExcelProvider, PersonProvider>(
+            builder: (context, provider, providerEvent,_) {
               return ButtonCustome(
                 isLoading: provider.isLoading,
                 value: true,
                 textTitle: "Save",
                 padding: const EdgeInsets.all(16),
                 onTap: () async {
-                  final result = await provider.generateExcel(data: widget.data);
+                  final result = await provider.generateExcel(data: providerEvent.eventData);
                   if (result != null) {
                     OpenFilex.open(result.path);
                   }
