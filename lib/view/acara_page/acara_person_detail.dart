@@ -143,7 +143,7 @@ class _AcaraPersonDetailBodyState extends State<_AcaraPersonDetailBody> {
                 textTitle: "Save",
                 padding: const EdgeInsets.all(16),
                 onTap: () async {
-                  final result = await provider.generateExcel(data: providerEvent.eventData);
+                  final result = await provider.generateExcel(data: providerEvent.personList?.first.event.target);
                   if (result != null) {
                     OpenFilex.open(result.path);
                   }
